@@ -30,7 +30,7 @@ import LeaveRequests from './components/leaves/LeaveRequests';
 import Holidays from './components/leaves/Holidays';
 import CompanyLeaves from './components/leaves/CompanyLeaves';
 import OnBoarding from './components/onboarding/OnBoarding';
-import CandidateView from './components/onboarding/candidateView';
+// import CandidateView from './components/onboarding/candidateView';
 import './App.css'
 
 const App = () => {
@@ -46,6 +46,7 @@ const App = () => {
             <NavBar />
             <Routes>
               <Route exact path="/" element={<Home />} />
+              {/* <Route exact path="/login" element={<Login />} /> */}
               <Route path="/employees" element={<EmployeeList />} />
               <Route path="/add-employee" element={<AddEmployee />} />
               <Route path="/leaves" element={<LeaveList />} />
@@ -72,7 +73,7 @@ const App = () => {
               <Route path="/leaves/company-leaves" element={<CompanyLeaves />} />
               <Route path="/onboarding" element={<OnBoarding />} />
               <Route path="/LateComeAndEarlyOut" element={<LateComeAndEarlyOut />} />
-              <Route path="/candidate-view" element={<CandidateView />} />
+         
               {/* Add more routes as needed */}
             </Routes>
           </Flex>
